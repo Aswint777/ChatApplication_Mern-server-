@@ -1,8 +1,13 @@
 const express = require('express')
-const { landingPage } = require('../Controller/chatController')
+const { landingPage, sampleData, singleChat } = require('../Controller/chatController')
+const { chats } = require('../Controller/data/data')
 
 const router = express.Router()
 
 router.get('/',landingPage)
+
+router.get('/api',sampleData)
+
+router.get('/api/:_id',singleChat)
 
 module.exports = router

@@ -7,10 +7,8 @@ const app = express()
 dotenv.config()
 
 const router = require('./Router/chatRouter')
-
+   
 app.use('/',router)
-
-
 
 
 const port = process.env.port 
