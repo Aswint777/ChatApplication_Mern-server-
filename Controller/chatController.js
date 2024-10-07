@@ -8,6 +8,7 @@ const sampleData =(req,res)=>{
     res.send(chats)
 }
 
+
 const singleChat =(req,res)=>{
     res.send(chats.find((a)=>a._id===req.params._id))
 }

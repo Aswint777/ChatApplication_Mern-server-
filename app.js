@@ -10,7 +10,6 @@ const router = require('./Router/chatRouter')
    
 app.use('/',router)
 
-
 const port = process.env.port 
 
 app.listen(port,()=>{
